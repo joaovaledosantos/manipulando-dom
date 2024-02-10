@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #f33;
+            border-radius: 10px;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="saudacoes()">Diga olá</button>
+
+<button onclick="mostracaixa()">Mostrar caixa</button>
+
+<div id="caixa"></div>
+
+<script>
+function saudacoes() {
+    alert('Olá :)')
+}
+
+function mostracaixa() {
+    const caixa = document.getElementById('caixa');
+
+    caixa.style.display = 'block'
+}
+</script>
+</body>
+</html>
