@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+<p name="text">
+    Lorem Ipsum is, simply dummy text of the
+</p>
+
+<span>Hello world</span>
+<span>Hello world</span>
+<span>Hello world</span>
+
+<script>
+    const texto = document.getElementsByName('text');
+    const span = document.getElementsByTagName('span');
+
+    console.log(span[0])
+    span[1].innerHTML = 'Olá mundo'
+</script>
+
+</body>
+</html>
