@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+</head>
+<body>
+
+<main id="container">
+    <div id="lista-container">
+        <ul id="lista">
+            <li>Item 01</li>
+            <li>Item 01</li>
+            <li>Item 01</li>
+        </ul>
+    </div>
+</main>
+
+<script>
+    const main = document.getElementById('container');
+    const div = document.getElementById('lista-container');
+    const ul = document.getElementById('lista');
+
+    ul.childNodes[1].innerHTML = 'Ola mundo'
+
+    console.log(ul)
+
+</script>
+
+</body>
+</html>
