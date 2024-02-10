@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS</title>
+
+    <style>
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: #ff3333;
+        }
+    </style>
+</head>
+<body>
+
+<p id="text" class="texto">
+    Lorem Ipsum is simply dummy text of the
+</p>
+
+<script>
+    const texto = document.getElementById('text');
+
+    texto.classList.add('blue');
+
+    if (texto.classList.contains('blue')){
+        alert('Elemento contém a classe Blue')
+    }
+</script>
+</body>
+</html>
